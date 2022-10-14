@@ -3,7 +3,7 @@ let mathAction = prompt(
 );
 const firstNumber = +prompt("Write first number here : ");
 const secondNumber = +prompt("Write second number here : ");
-if (firstNumber && secondNumber) {
+if (!isNaN(firstNumber) && !isNaN(secondNumber)) {
   let result;
   switch (mathAction) {
     case "add":
